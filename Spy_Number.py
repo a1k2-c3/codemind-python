@@ -1,16 +1,18 @@
+def spy(n):
+    x=n
+    s=0
+    p=1
+    while n>0:
+        r=n%10
+        s=s+r
+        n=n//10
+    while x>0:
+        rem=x%10
+        p=p*rem
+        x=x//10
+    if s==p:
+        print('Spy Number')
+    else:
+        print('Not Spy Number')
 n=int(input())
-s=n
-e=0
-p=1
-while n>0:
-    rem=n%10
-    e=e+rem
-    n=n//10
-while s>0:
-    r=s%10
-    p=p*r
-    s=s//10
-if p==e:
-    print('Spy Number')
-else:
-    print('Not Spy Number')
+spy(n)
