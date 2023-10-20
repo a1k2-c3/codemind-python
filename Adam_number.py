@@ -1,18 +1,15 @@
-n=int(input())
-x=n
-s=n*n
-rev=d=0
+n=int(input());a=n
+s=n**2;rev=c=0
 while n>0:
-    rem=n%10
-    rev=(rev*10)+rem
+    r=n%10
+    rev=(rev*10)+r
     n=n//10
-y=rev*rev
-while y>0:
-    t=y%10
-    d=(d*10)+t
-    y=y//10
-if d==s:
-    print('True')
+x=rev**2    
+while x>0:
+     rem=x%10
+     c=(c*10)+rem
+     x=x//10
+if c==s:
+    print(True)
 else:
-    print('False')
-    
+    print(False)
