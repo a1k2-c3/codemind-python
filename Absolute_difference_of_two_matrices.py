@@ -6,11 +6,9 @@ for i in range(r):
 for i in range(r):
     Il=list(map(int,input().split()))
     mat2.append(Il)
-ans = []
 for i in range(r):
-    cur = []
     for j in range(r):
-        cur.append(abs(mat1[i][j] - mat2[i][j]))
-    ans.append(cur)
-for i in ans:
-    print(*i)
+        if (j+1)==r:
+            print(abs(mat1[i][j]-mat2[i][j]))
+        else:
+            print(abs(mat1[i][j]-mat2[i][j]),end=" ")
